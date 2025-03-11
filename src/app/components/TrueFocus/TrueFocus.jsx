@@ -16,7 +16,12 @@ const TrueFocus = ({
   const [lastActiveIndex, setLastActiveIndex] = useState(null);
   const containerRef = useRef(null);
   const wordRefs = useRef([]);
-  const [focusRect, setFocusRect] = useState({ x: 0, y: 0, width: 0, height: 0 });
+  const [focusRect, setFocusRect] = useState({
+    x: 0,
+    y: 0,
+    width: 0,
+    height: 0,
+  });
 
   useEffect(() => {
     if (!manualMode) {
@@ -58,7 +63,7 @@ const TrueFocus = ({
 
   return (
     <div
-      className="relative flex gap-4 justify-center items-center flex-wrap"
+      className="relative flex gap-2 md:gap-6 lg:gap-8 justify-center items-center flex-wrap"
       ref={containerRef}
     >
       {words.map((word, index) => {
@@ -67,7 +72,7 @@ const TrueFocus = ({
           <span
             key={index}
             ref={(el) => (wordRefs.current[index] = el)}
-            className="relative text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 py-5 cursor-pointer"
+            className="relative font-poppins text-3xl  md:text-5xl lg:text-5xl  text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 py-2 sm:py-3 md:py-4 lg:py-5 cursor-pointer"
             style={{
               filter: manualMode
                 ? isActive

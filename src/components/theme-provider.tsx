@@ -1,4 +1,4 @@
-// components/theme-provider.jsx (or .tsx)
+/* // components/theme-provider.jsx (or .tsx)
 'use client'; // Ensure this is a client component
 
 import * as React from 'react';
@@ -34,4 +34,34 @@ export function ThemeProvider({ children, ...props }) {
     return <>{children}</>; // Render children without theme until mounted
   }
   return <NextThemesProvider attribute="class" defaultTheme={theme}  {...props}>{children}</NextThemesProvider>;
+}  */
+
+
+'use client';
+
+import * as React from 'react';
+import { ThemeProvider as NextThemesProvider } from 'next-themes';
+
+export function ThemeProvider({ children, ...props }) {
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div style={{ visibility: 'hidden' }}>{children}</div>;
+  }
+
+  return (
+    <NextThemesProvider
+      attribute="class"
+      defaultTheme="dark"
+      forcedTheme="dark"
+      enableSystem={false}
+      {...props}
+    >
+      {children}
+    </NextThemesProvider>
+  );
 }

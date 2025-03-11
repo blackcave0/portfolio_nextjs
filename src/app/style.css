@@ -1,0 +1,20 @@
+.circle {
+  position: fixed;
+    /* or absolute */
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.842);
+    pointer-events: none;
+    /* So it doesn't interfere with clicks */
+    transform: translate(-50%, -50%);
+    /* Center the cursor */
+    z-index: 9999;
+    /* Ensure it's on top */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+      0 0 10px rgba(255, 255, 255, 0.3),
+      0 0 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-out;
+}
