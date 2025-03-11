@@ -21,84 +21,92 @@ const Footer = () => {
                 {PersonalData.name}{" "}
               </h4>
             </div>
-            <div className="text-sm text-gray-400 mt-4">
-              <p className="text-xxs md:text-xs font-opensans lg:text-sm text-gray-400">
+            <div className="text-sm text-gray-400 lg:mt-7">
+              <p className="font-opensans text-sm text-gray-400">
                 MERN stack developer building 'future-proof' apps with modern
                 design.
               </p>
-              <p className="text-xxs md:text-xs font-opensans lg:text-sm text-gray-400">
+              <p className="font-opensans text-sm text-gray-400">
                 {PersonalData.email}
               </p>
             </div>
           </div>
 
           {/* Links */}
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
-            <div>
-              <ul className="text-xxs md:text-xs lg:text-sm font-opensans text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-blue-500 transition-colors">
-                    Portfolio
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-blue-500 transition-colors">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    className="hover:text-blue-500 transition-colors"
-                  >
-                    Contact me
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    className="hover:text-blue-500 transition-colors"
-                  >
-                    Book a call
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul className="text-xxs md:text-xs lg:text-sm text-gray-400">
-                <li>
-                  <a
-                    href={PersonalData.social.linkedin}
-                    className="hover:text-blue-500 transition-colors"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={PersonalData.social.instagram}
-                    className="hover:text-blue-500 transition-colors"
-                  >
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={PersonalData.social.github}
-                    className="hover:text-blue-500 transition-colors"
-                  >
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={PersonalData.social.medium}
-                    className="hover:text-blue-500 transition-colors"
-                  >
-                    Medium
-                  </a>
-                </li>
-              </ul>
+          <div className="mt-[5rem]">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-4 ">
+              <div>
+                <ul className="text-lg font-opensans flex flex-col gap-1 text-gray-400">
+                  <li>
+                    <a
+                      href="#"
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      Portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      Contact me
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#contact"
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      Book a call
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul className="text-lg text-gray-400 flex flex-col gap-1">
+                  <li>
+                    <a
+                      href={PersonalData.social.linkedin}
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={PersonalData.social.instagram}
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={PersonalData.social.github}
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      Github
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={PersonalData.social.medium}
+                      className="hover:text-blue-500 transition-colors"
+                    >
+                      Medium
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
