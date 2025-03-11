@@ -21,7 +21,7 @@ const Footer = () => {
                 {PersonalData.name}{" "}
               </h4>
             </div>
-            <div className="text-xxs md:text-xs lg:text-sm text-gray-400 mt-7">
+            <div className="text-sm text-gray-400 mt-4">
               <p className="text-xxs md:text-xs font-opensans lg:text-sm text-gray-400">
                 MERN stack developer building 'future-proof' apps with modern
                 design.
