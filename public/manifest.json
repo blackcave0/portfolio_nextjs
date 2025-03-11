@@ -1,0 +1,20 @@
+{
+  "name" : "Daksh Srivastava | Full Stack Developer | MERN & React Specialist",
+  "description": "Professional full stack developer specializing in MERN stack, React.js, and Next.js. Building scalable web applications and mobile apps with modern technologies",
+  "short_name": "Daksh Srivastava",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#141212",
+  "background_color": "#100d0d",
+  "display": "standalone"
+}

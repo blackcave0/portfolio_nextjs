@@ -1,4 +1,6 @@
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/next";
+
 import Footer from "@/components/Footer/Footer";
 // import { Geist, Geist_Mono } from "next/font/google";
 import MouseCursor from "./MouseCursor";
@@ -136,6 +138,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <head>
+  <link rel="manifest" href="/manifest.json" />
         {/* Additional meta tags */}
         <meta name="revisit-after" content="7 days" />
         <meta name="rating" content="General" />
@@ -153,6 +156,7 @@ export default function RootLayout({ children }) {
           <MouseCursor />
           <AOSInitializer />
           {children}
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
