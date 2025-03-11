@@ -141,14 +141,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <head>
-  <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
         {/* Additional meta tags */}
         <meta name="revisit-after" content="7 days" />
         <meta name="rating" content="General" />
         <meta name="distribution" content="Global" />
-        <link rel="canonical" href="https://your-portfolio-domain.com" />
-        <link rel="me" href="mailto:your@professional.email" />
-        <link rel="author" href="https://linkedin.com/in/yourprofile" />
+        <link rel="canonical" href="https://imdaksh.vercel.app" />
+        <link rel="me" href="mailto:sarvesh.sri00@gmail.com" />
+        <link rel="author" href="https://linkedin.com/in/sarvesh-srivastava0" />
       </head>
       <body
         className={` ${openSans.className} ${montserrat.className} ${roboto.className} ${poppins.className} ${inter.className} ${lato.className} ${raleway.className} ${sigmar.className} ${arsenal.className} antialiased`}
