@@ -105,7 +105,7 @@ const Footer = () => {
 
         {/* Copyright and Credits */}
         <div className="mt-8 pt-4 text-center md:text-left text-xxs text-gray-400 border-t border-gray-700 flex flex-col md:flex-row justify-center items-center">
-          <div className="font-montserrat text-gray-100  text-[3rem] md:text-[7rem] lg:text-[7rem] font-bold opacity-5 pointer-events-none">
+          <div className="font-montserrat text-gray-100  text-[3rem] md:text-[7rem] lg:text-[7rem] font-bold opacity-20 pointer-events-none">
             DAKSH SRIVASTAVA
           </div>
         </div>
