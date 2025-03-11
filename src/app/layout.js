@@ -75,7 +75,7 @@ export const metadata = {
   authors: [{ name: "Daksh Srivastava" }],
   creator: "Daksh Srivastava",
   publisher: "Daksh Srivastava",
-  metadataBase: new URL("https://your-portfolio-domain.com"),
+  metadataBase: new URL("https://imdaksh.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -83,11 +83,11 @@ export const metadata = {
     title: "Daksh Srivastava - Full Stack Developer Portfolio",
     description:
       "Professional portfolio showcasing MERN stack, React.js, and Next.js development projects",
-    url: "https://your-portfolio-domain.com",
+    url: "https://imdaksh.vercel.app",
     siteName: "Daksh Srivastava Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/icon.png",
         width: 1200,
         height: 630,
         alt: "Daksh Srivastava Portfolio Preview",
@@ -96,14 +96,14 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
-  twitter: {
+  /* twitter: {
     card: "summary_large_image",
     title: "Daksh Srivastava | Full Stack Developer",
     description:
       "MERN stack and React.js expert building modern web applications",
     creator: "@yourtwitterhandle",
     images: ["/twitter-image.png"],
-  },
+  }, */
   robots: {
     index: true,
     follow: true,
