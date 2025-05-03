@@ -11,35 +11,34 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 export const Projects = () => {
   const cardData = [
     {
-      category: "E-commerce",
-      title: "MERN Stack E-commerce",
-      hoverTitle: "Next.js E-commerce",
+      category: "Healthcare",
+      title: "Doctor Appointment System",
+      hoverTitle: "Medical Booking Platform",
       description:
-        "A full-stack e-commerce platform built with React, Node.js, Express, and MongoDB. Features include user authentication, product catalog, shopping cart, and secure checkout.",
+        "A comprehensive healthcare platform built with Next.js and Supabase database. Features include doctor appointment scheduling, medicine ordering, patient profiles, and secure payment processing.",
       imageSrc: "/noise.png",
-      // hoverImageSrc: "Wedding.gif",
-      hoverImageSrc: "/Shopping_Basket.gif",
-      link: "https://google.com",
+      hoverImageSrc: "/doctor.gif",
+      link: "https://mediconnect-seven.vercel.app/",
     },
     {
-      category: "Real Estate",
-      title: "MERN Stack Real Estate",
-      hoverTitle: "Next.js Real Estate",
+      category: "Fashion",
+      title: "Fashion Store",
+      hoverTitle: "Next.js Fashion Shop",
       description:
-        "A real estate listing website built with React, Node.js, Express, and MongoDB. Features include property search, detailed listings, user accounts, and contact forms.",
+        "A fashion e-commerce platform built with Next.js and Supabase database. Features include product catalog, shopping cart, user accounts, and secure checkout system.",
       imageSrc: "/noise.png",
-      hoverImageSrc: "/Housekeys.gif",
-      link: "https://google.com",
+      hoverImageSrc: "/fashion.gif",
+      link: "https://ecommerc-memonto.vercel.app/",
     },
     {
       category: "Matrimonial",
-      title: "MERN Stack Matrimonial",
+      title: "True Matrimonial",
       hoverTitle: "Next.js Matrimonial",
       description:
         "A matrimonial website built with React, Node.js, Express, and MongoDB. Features include user profiles, partner preferences, search filters, and secure communication.",
       imageSrc: "/noise.png",
       hoverImageSrc: "/Wedding.gif",
-      link: "https://google.com",
+      link: "https://truematrimonial.pages.dev/",
     },
   ];
   return (
